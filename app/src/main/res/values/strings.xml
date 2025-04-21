@@ -1,0 +1,35 @@
+<resources>
+    <!--Layout-->
+    <string name="app_name">KlaverJassen</string>
+    <string name="Team_Preview">Team name</string>
+    <string name="TotalPoints">TotalPoints</string>
+    <string name="AddBonus">Add bonus</string>
+    <string name="remBonus">-bonus</string>
+    <string name="AddPoints">Add Points</string>
+    <string name="currentBonus">Bonus:\n %d</string>
+
+    <string name="Confirm">confirm</string>
+    <string name="Points">points</string>
+
+    <!--templates-->
+    <string name="PointsTemplate">%d\n%d\n----Round %d\n%d</string>
+    <string name="Error">Fatal Error:%d %s</string>
+    <string name="zero">0</string>
+
+    <string name="trump">Trump</string>
+    <string name="Other">Other</string>
+
+
+    <string name="trumpJack">Jack\n 20</string>
+    <string name="trumpNine">Nine\n 14</string>
+
+    <string name="otherJack">Jack\n 2</string>
+    <string name="otherNine">Nine\n 0</string>
+
+    <string name="Ace">Ace\n 11</string>
+    <string name="Ten">Ten\n 10</string>
+    <string name="King">King\n 4</string>
+    <string name="Queen">Queen\n 3</string>
+    <string name="Eight">Eight\n 0</string>
+    <string name="Seven">Seven\n 0</string>
+</resources>

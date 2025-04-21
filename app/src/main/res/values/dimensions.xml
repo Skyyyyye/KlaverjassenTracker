@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="PointsScroller">200dp</dimen>
+    <dimen name="AddBonus">70dp</dimen>
+
+    <!--space-->
+    <dimen name="spcScroller">10dp</dimen>
+    <dimen name="spcTotalPoints">10dp</dimen>
+    <dimen name="divide">10dp</dimen>
+    <dimen name="spcTotalpointswhite">10dp</dimen>
+
+    <!--dialog-->
+    <dimen name="dialogPadding">20dp</dimen>
+    <dimen name="tablePadding">2dp</dimen>
+
+</resources>
