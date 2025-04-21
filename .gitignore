@@ -46,9 +46,7 @@ proguard-rules.pro
 *.class
 /captures
 *.cxx
-.DS_Store
 .externalNativeBuild
 
 # Android NDK
 ndkBuild/
-local.properties

@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
         val remBonusButton2:Button = findViewById<Button>(R.id.remBonus2)
         val name1: EditText = findViewById<EditText>(R.id.Name1)
         val name2: EditText = findViewById<EditText>(R.id.Name2)
-        name1.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->
+        name1.setOnKeyListener(View.OnKeyListener { _, keyCode, event ->
             if (keyCode == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_UP) {
                 name1.clearFocus()
                 val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
             }
             false
         })
-        name2.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->
+        name2.setOnKeyListener(View.OnKeyListener { _, keyCode, event ->
             if (keyCode == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_UP) {
                 name2.clearFocus()
                 val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
@@ -200,8 +200,8 @@ class MainActivity : ComponentActivity() {
                     }
                     dia.hide()
                     round++
-                    tempBonus1 = 0;
-                    tempBonus2 = 0;
+                    tempBonus1 = 0
+                    tempBonus2 = 0
                     val tv1:TextView = findViewById(R.id.CurrentBonus1)
                     tv1.text = String.format(this.getString(R.string.currentBonus), tempBonus1)
                     val tv2:TextView = findViewById(R.id.CurrentBonus2)
