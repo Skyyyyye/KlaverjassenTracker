@@ -11,15 +11,27 @@
     <string name="Confirm">confirm</string>
     <string name="Points">points</string>
 
+    <string name="trump">Trump</string>
+    <string name="Other">Other</string>
+
+    <string name="Pit">Pit</string>
+    <string name="going">Going</string>
+    <string name="notGoing">Not going</string>
+    <string name="Cheated">Cheated</string>
+
+    <string name="NoGoingTeam">No team is going</string>
+    <string name="NoOutcome">"No options given</string>
+
+
+
     <!--templates-->
     <string name="PointsTemplate">%d\n%d\n----Round %d\n%d</string>
     <string name="Error">Fatal Error:%d %s</string>
     <string name="zero">0</string>
 
-    <string name="trump">Trump</string>
-    <string name="Other">Other</string>
 
 
+    <!--cards-->
     <string name="trumpJack">Jack\n 20</string>
     <string name="trumpNine">Nine\n 14</string>
 

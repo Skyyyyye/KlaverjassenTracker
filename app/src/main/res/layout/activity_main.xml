@@ -36,19 +36,56 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <ScrollView
-                android:id="@+id/sv1"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/PointsScroller"
-                android:background="?attr/colorOnSecondary"
-                android:scrollbarStyle="insideOverlay">
+                android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:id="@+id/PointsLayout1"
+                <ScrollView
+                    android:id="@+id/sv1"
                     android:layout_width="match_parent"
+                    android:layout_height="@dimen/PointsScroller"
+                    android:background="?attr/colorOnSecondary"
+                    android:scrollbarStyle="insideOverlay">
+
+                    <LinearLayout
+                        android:id="@+id/PointsLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/pointsOverView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:paddingHorizontal="0dp"
+                                android:paddingVertical="0dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="0dp"
+                                android:textSize="14sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/FloatEdit1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" />
-            </ScrollView>
+                    android:layout_gravity="bottom|right"
+                    android:baselineAligned="false"
+                    android:clickable="true"
+                    app:fabCustomSize="30dp"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            </FrameLayout>
 
             <View
                 android:id="@+id/view"
@@ -75,6 +112,13 @@
                 android:id="@+id/view6"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/spcTotalpointswhite" />
+
+            <ToggleButton
+                android:id="@+id/Going1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOff="@string/notGoing"
+                android:textOn="@string/going" />
 
             <Button
                 android:id="@+id/Bonus1"
@@ -142,20 +186,59 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/Team_Preview"
                     android:singleLine="true" />
+
             </com.google.android.material.textfield.TextInputLayout>
 
-            <ScrollView
-                android:id="@+id/sv2"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/PointsScroller"
-                android:background="?attr/colorOnSecondary">
+                android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:id="@+id/PointsLayout2"
+                <ScrollView
+                    android:id="@+id/sv2"
                     android:layout_width="match_parent"
+                    android:layout_height="@dimen/PointsScroller"
+                    android:background="?attr/colorOnSecondary">
+
+                    <LinearLayout
+                        android:id="@+id/PointsLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/pointsOverView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="false"
+                                android:paddingHorizontal="0dp"
+                                android:paddingVertical="0dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="0dp"
+                                android:textSize="14sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/FloatEdit2"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" />
-            </ScrollView>
+                    android:layout_gravity="bottom|right"
+                    android:baselineAligned="false"
+                    android:clickable="true"
+                    app:fabCustomSize="30dp"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            </FrameLayout>
 
             <View
                 android:id="@+id/view2"
@@ -182,6 +265,13 @@
                 android:id="@+id/view7"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/spcTotalpointswhite" />
+
+            <ToggleButton
+                android:id="@+id/Going2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOff="@string/notGoing"
+                android:textOn="@string/going" />
 
             <Button
                 android:id="@+id/Bonus2"
@@ -312,7 +402,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Space
                 android:layout_width="wrap_content"

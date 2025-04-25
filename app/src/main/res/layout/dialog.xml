@@ -45,6 +45,25 @@
                 android:textSize="34sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/Pit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/Pit" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/Cheated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="@string/Cheated" />
+        </com.google.android.material.chip.ChipGroup>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

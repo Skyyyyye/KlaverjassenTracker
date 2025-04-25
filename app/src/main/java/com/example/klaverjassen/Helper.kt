@@ -13,5 +13,10 @@ class Helper {
         val toast = Toast.makeText(context, str, duration) // in Activity
         toast.show()
     }
+    public fun ShowToast(context: Context,text:String)
+    {
+        val toast = Toast.makeText(context, text,Toast.LENGTH_SHORT)
+        toast.show()
+    }
 }
 

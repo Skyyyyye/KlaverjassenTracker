@@ -2,6 +2,7 @@
 <resources>
     <dimen name="PointsScroller">200dp</dimen>
     <dimen name="AddBonus">70dp</dimen>
+    <dimen name="editButton">160dp</dimen>
 
     <!--space-->
     <dimen name="spcScroller">10dp</dimen>
