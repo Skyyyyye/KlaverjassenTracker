@@ -42,24 +42,35 @@ class MainActivity : ComponentActivity() {
             {
                 if (editing[localTeam])
                 {
-                    editing[localTeam] = false
-                    val po = arrayOf<EditText>(findViewById(R.id.pointsOverView1), findViewById(R.id.pointsOverView2))
-                    po[localTeam].isFocusable = false
-                    po[localTeam].isFocusableInTouchMode = false
-                    po[localTeam].isClickable =true
-                    po[localTeam].clearFocus()
-                    val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-                    imm.hideSoftInputFromWindow(po[localTeam].windowToken, 0)
-                    butt.setImageResource(android.R.drawable.ic_menu_edit)
 
+                    val po = arrayOf<EditText>(findViewById(R.id.pointsOverView1), findViewById(R.id.pointsOverView2))
                     val strings = po[localTeam].text.split("\n")
                     if (strings.last().isNotEmpty())
                     {
-                        teamPoints[localTeam] = strings.last().toInt()
-                    }
-                    val tp = arrayOf<TextView>(findViewById(R.id.TotalPoints1), findViewById(R.id.TotalPoints2))
-                    tp[localTeam].text = teamPoints[localTeam].toString()
+                        if (strings.last().toIntOrNull() != null)
+                        {
+                            editing[localTeam] = false
+                            po[localTeam].isFocusable = false
+                            po[localTeam].isFocusableInTouchMode = false
+                            po[localTeam].isClickable =true
+                            po[localTeam].clearFocus()
+                            val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+                            imm.hideSoftInputFromWindow(po[localTeam].windowToken, 0)
+                            butt.setImageResource(android.R.drawable.ic_menu_edit)
 
+                            teamPoints[localTeam] = strings.last().toInt()
+                            val tp = arrayOf<TextView>(findViewById(R.id.TotalPoints1), findViewById(R.id.TotalPoints2))
+                            tp[localTeam].text = teamPoints[localTeam].toString()
+                        }
+                        else
+                        {
+                            helper.ShowToast(this, this.getString(R.string.LastNoNumber))
+                        }
+                    }
+                    else
+                    {
+                        helper.ShowToast(this, this.getString(R.string.LastNoNumber))
+                    }
                 }
                 else
                 {
@@ -267,7 +278,7 @@ class MainActivity : ComponentActivity() {
                         if (tt != goingTeam) {
                             tempBonus[tt] += tempBonus[goingTeam]
                             tempBonus[goingTeam] = 0
-                            teamPoints[goingTeam] = 0
+                            tempPoints[goingTeam] = 0
                             filledPoints[tt] = maxPoints
                             filledPoints[goingTeam] = 0
                         }

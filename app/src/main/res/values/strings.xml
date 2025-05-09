@@ -2,7 +2,7 @@
     <!--Layout-->
     <string name="app_name">KlaverJassen</string>
     <string name="Team_Preview">Team name</string>
-    <string name="TotalPoints">TotalPoints</string>
+    <string name="TotalPoints">Total points</string>
     <string name="AddBonus">Add bonus</string>
     <string name="remBonus">-bonus</string>
     <string name="AddPoints">Add Points</string>
@@ -20,7 +20,8 @@
     <string name="Cheated">Cheated</string>
 
     <string name="NoGoingTeam">No team is going</string>
-    <string name="NoOutcome">"No options given</string>
+    <string name="NoOutcome">No options given</string>
+    <string name="LastNoNumber">Last line is not a number</string>
 
 
 
